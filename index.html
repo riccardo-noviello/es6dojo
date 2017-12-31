@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" />
+
+<head>
+    <style>
+        .toggled{
+            background-color: blue;
+            color: white;            
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="btn1">I am a button.</button>
+    <p id="p1" toggled="false">I am clickable text</p>
+</body>
+<script type="module">
+    import { App } from './app.js';
+    $(document).ready(function () {
+        const app = new App();
+    });   
+</script>
+
+</html>
